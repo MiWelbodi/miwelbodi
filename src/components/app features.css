@@ -1,0 +1,164 @@
+/* Layout for desktop view */
+#features .row {
+    display: flex;
+    align-items: center;
+}
+
+/* Left side (Phone image) */
+#features .col-lg-5 {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    width: 100px;
+    
+}
+
+#features .col-lg-5 img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#features .rellax {
+    position: absolute;
+    max-width: 300px;
+    top: 10%; /* Adjust card position */
+    right: -20px;
+}
+
+#features p {
+    font-size: 1.1rem;
+    color: #7e839a;
+}
+
+#features .row-cols-1 .col {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+#features .row-cols-1 .col img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Feature title and text */
+#features h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1d2332;
+}
+
+#features p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #7e839a;
+}
+
+/* Responsive Design */
+@media (max-width: 778px) {
+    #features .row {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    #features .col-lg- {
+        margin-bottom: 30px;
+    }
+
+    #features .rellax {
+        right: 0; /* Adjust the position of the floating card on smaller screens */
+    }
+}
+  
+  #features h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1d2332;
+    margin-bottom: 20px;
+  }
+  
+  #features p.text-muted {
+    font-size: 1rem;
+    color: #7e839a;
+    margin-bottom: 50px;
+  }
+  
+  .phone-image {
+    text-align: center;
+  }
+  
+  .phone-image img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 5px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    background-color: #f0f1f7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-box img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .feature-content h3 {
+    font-size: 2.5rem;
+    color: #1d2332;
+    margin-bottom: 10px;
+    
+  }
+  
+  .feature-content p {
+    font-size: 0.9rem;
+    color: #7e839a;
+    margin: 0;
+  }
+  
+  .col-lg-8 {
+    margin-top: -170px;
+  }
+
+  @media (max-width: 991px) {
+    .phone-image {
+      margin-bottom: 50px;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    .col-lg-8 {
+        margin-top: auto;
+        padding: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #features {
+      padding: 50px 0;
+    }
+    
+    #features h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  

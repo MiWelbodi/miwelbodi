@@ -1,0 +1,183 @@
+/* General styles */
+.container {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* How it works section */
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h2.h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Slider styles */
+.position-relative {
+    position: relative;
+}
+
+.mx-5 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Navigation buttons */
+.btn-icon {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-prev {
+    left: -50px;
+    top: 500px;
+}
+
+.btn-next {
+    right: -50px;
+    top: 500px;
+}
+
+/* Phone frame and screen */
+.position-absolute {
+    position: absolute;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.start-50 {
+    left: 50%;
+    right: 10%;
+}
+
+.translate-middle-x {
+    transform: translateX(-45%);
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-md-33 {
+    width: 13.333%;
+}
+
+.zindex-5 {
+    z-index: 5;
+}
+
+.bg-repeat-0 {
+    background-repeat: no-repeat;
+}
+
+.bg-size-cover {
+    background-size: cover;
+}
+
+/* Swiper slider */
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+    display: block;
+}
+
+.swiper-slide:first-child {
+    display: block;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Description text */
+.justify-content-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.swiper-tab {
+    display: none;
+}
+
+.swiper-tab.active {
+    display: block;
+}
+
+.h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/* Slider progress */
+#swiper-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+#swiper-progress::before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .w-md-33 {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mx-5 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .btn-prev, .btn-next {
+        display: none;
+    }
+}

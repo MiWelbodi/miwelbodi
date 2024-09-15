@@ -1,0 +1,186 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fd;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo and the other elements */
+    align-items: center;
+    width: 100%;
+}
+
+.logo h1 {
+    color: #4b8bff;
+    font-size: 1.5rem;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex; /* Align links horizontally */
+    margin-left: auto; /* Aligns links to the right of the logo */
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1d1c1c;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+/* Remove align-items from here as it doesn't apply to anchor tags */
+
+/* Android and iOS Buttons */
+.app-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.app-buttons button {
+    background-color: #4b8bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.app-buttons .ios {
+    background-color: white;
+    color: #4b8bff;
+    border: 2px solid #4b8bff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: #4b8bff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+    background-color: #f8f9fd;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #4b8bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sign-in-link {
+    color: #4b8bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.hero-image img {
+    width: 550px;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 778px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed; /* Change to fixed for better mobile experience */
+        top: 80px; /* Adjust based on your header height */
+        left: 0;
+        right: 0;
+        font-size: 1.5rem; /* Slightly reduced for better fit */
+        width: 100%;
+        height: calc(100vh - 80px); /* Adjust based on your header height */
+        background-color: #4b8bff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.092);
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .app-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex; /* Display hamburger on small screens */
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero-image img {
+        max-width: 100%;
+    }
+    
+}
+

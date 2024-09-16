@@ -2,6 +2,7 @@ import './landingpage.css';
 import './app features.css';
 import './Sliding how it work.css';
 import './hamburger menu';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     const swiperOptions = {
@@ -33,7 +34,7 @@ const LandingPage = () => {
                     <ul className="nav-links">
                         <li><a href="/">About</a></li>
                         <li><a href="/">Chatbot</a></li>
-                        <li><a href="/">Dashboard</a></li>
+                        <li><Link to="/dashboard">Dashboard</Link></li>
                         <li><a href="/">Profile</a></li>
                     </ul>
 

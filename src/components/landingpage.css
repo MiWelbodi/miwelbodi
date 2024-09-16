@@ -49,10 +49,10 @@ nav {
     text-decoration: none;
     color: #1d1c1c;
     font-weight: 500;
+    align-items: center;
     transition: .5s ease;
+    
 }
-
-/* Remove align-items from here as it doesn't apply to anchor tags */
 
 /* Android and iOS Buttons */
 .app-buttons {
@@ -145,16 +145,17 @@ nav {
     .nav-links {
         display: none;
         flex-direction: column;
-        position: fixed; /* Change to fixed for better mobile experience */
-        top: 80px; /* Adjust based on your header height */
+        position: absolute;
+        top: 15%;
         left: 0;
-        right: 0;
-        font-size: 1.5rem; /* Slightly reduced for better fit */
+        font-size: 2rem;
+        max-width: 450px;
+        right: -20px;
         width: 100%;
-        height: calc(100vh - 80px); /* Adjust based on your header height */
+        height: 100vh;
         background-color: #4b8bff;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.092);
-        z-index: 1000; /* Ensure it's above other content */
+        
     }
 
     .nav-links.active {
